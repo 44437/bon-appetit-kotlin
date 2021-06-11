@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/categoryCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:hardwareAccelerated="true"
+    app:cardBackgroundColor="#123"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/categoryImageView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="TextTextTextTextTextText"
+            android:textColor="@color/greyColor"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/categoryTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:maxLength="80"
+            android:layout_marginLeft="5dp"
+            android:text="TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/categoryImageView"            android:layout_below="@+id/categoryTextView"
+            android:textColor="@color/greyColor"
+            android:textSize="10dp" />
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:id="@+id/categoryImageView"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+             />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

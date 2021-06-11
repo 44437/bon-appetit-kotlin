@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pagetwo">
+    <ImageView
+        android:background="@drawable/backbutton"
+        android:id="@+id/backButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/backButton"
+        android:id="@+id/foodListRecyclerView"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/foodListLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        app:indicatorColor="@color/toolbar"
+        />
+    <TextView
+        android:id="@+id/foodListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/backButton"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/baloo"
+        android:text="Title"
+        android:textColor="#123"
+        android:textSize="17sp" />
+
+</RelativeLayout>

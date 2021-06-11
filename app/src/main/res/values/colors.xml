@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E1A27</color>
+    <color name="colorPrimaryDark">#0E1A27</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="girisYesil">#1C9C21</color>
+    <color name="toolbar">#080F17</color>
+    <color name="countryCardColor">#97112233</color>
+    <color name="greyColor">#F1F1F1</color>
+
+
+
+</resources>
